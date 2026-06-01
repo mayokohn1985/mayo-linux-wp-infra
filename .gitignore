@@ -1,0 +1,37 @@
+.env
+*.env
+.env.*
+!.env.example
+
+# Secrets
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Backups and dumps
+*.sql
+*.sql.gz
+*.tar
+*.tar.gz
+*.zip
+backups/
+dumps/
+
+# Runtime data
+nginx_cache/
+wordpress/
+mysql/
+mariadb/
+redis/
+data/
+logs/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
