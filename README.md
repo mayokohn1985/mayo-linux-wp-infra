@@ -1,5 +1,39 @@
 # Mayo Linux WP Infra
 
+Linux, Docker, Nginx and WordPress infrastructure toolkit.
+
+## About
+
+I'm a WordPress and WooCommerce specialist with a growing focus on Linux infrastructure, automation and hosting environments.
+
+This repository contains scripts, configurations and notes collected while building and maintaining Linux servers, Docker environments, WordPress stacks and monitoring solutions.
+
+## Topics
+
+* Linux administration
+* Docker
+* Nginx
+* WordPress infrastructure
+* Monitoring
+* Security hardening
+* Bash scripting
+* GitHub Actions
+
+## Repository Structure
+
+* `scripts/` - Bash automation and maintenance scripts
+* `nginx/` - Nginx snippets and example configurations
+* `docker/` - Docker Compose stacks and examples
+* `docs/` - Notes, checklists and operational documentation
+
+## Goal
+
+The goal of this repository is to document practical Linux and hosting knowledge through real-world examples and reusable configurations.
+
+
+
+# Mayo Linux WP Infra
+
 Production-oriented Linux + WordPress infrastructure snippets, scripts and Docker examples.
 
 This repository contains practical building blocks for running WordPress/WooCommerce on a Linux server with Docker, Nginx, MariaDB, Redis, Cloudflare and basic hardening.
