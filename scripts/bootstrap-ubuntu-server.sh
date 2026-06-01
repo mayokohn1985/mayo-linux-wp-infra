@@ -33,7 +33,7 @@ if ! id "$ADMIN_USER" >/dev/null 2>&1; then
 fi
 
 # SSH hardening baseline. Review before running on remote systems.
-cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup.$(date +%F-%H%M%S)
+cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup."$(date +%F-%H%M%S)"
 sed -i "s/^#\?Port .*/Port ${SSH_PORT}/" /etc/ssh/sshd_config
 sed -i "s/^#\?PasswordAuthentication .*/PasswordAuthentication no/" /etc/ssh/sshd_config
 sed -i "s/^#\?PermitRootLogin .*/PermitRootLogin no/" /etc/ssh/sshd_config

@@ -4,17 +4,17 @@ set -euo pipefail
 echo "== Host =="
 hostnamectl || true
 
-echo "\n== Disk =="
+printf "\n== Disk ==\n"
 df -h
 
-echo "\n== Memory =="
+printf "\n== Memory ==\n"
 free -h
 
-echo "\n== Listening ports =="
+printf "\n== Listening ports ==\n"
 ss -tulpn
 
-echo "\n== Docker containers =="
+printf "\n== Docker containers ==\n"
 docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}' || true
 
-echo "\n== UFW =="
+printf "\n== UFW ==\n"
 ufw status verbose || true
